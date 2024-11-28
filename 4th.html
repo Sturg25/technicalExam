@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <form id="signup">
+            <input type="text" id= "fname" placeholder="First Name">
+            <input type="text" id= "lname" placeholder="Last Name">
+            <input type="text" id= "email" placeholder="Email Address">
+            <input type="text" id= "password" placeholder="Password">
+            <input type="text" id= "confirmPassword" placeholder="Confirm Password">
+            <div>
+                <button type="submit"> SUBMIT </button>
+            </div>
+        </form>
+        <script>
+            document.getElementById("signup").addEventListener("submit", function (e) {
+                e.preventDefault();
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                const confirmPassword = document.getElementById("confirmPassword").value;
+
+                if (!email.includes("@")) {
+                    alert("Invalid email");
+                }
+                
+            }
+        </script>
+    </body>
+</html>

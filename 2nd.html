@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <div> 
+            <div class="notif-badge">
+                <div id="badgeCounter" class="badge">0</div>
+            </div>
+            <script>
+                let counter = localStorage.getItem("notifCount") || 0;
+                counter++;
+                localStorage.setItem("notifCount", counter);
+                document.getElementById("badgeCounter").textContent = counter;
+            </script>
+        </div>
+    </body>
+</html>

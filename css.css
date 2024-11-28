@@ -1,0 +1,53 @@
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notif-badge {
+    position: relative;
+    background-color: burlywood;
+    border: 1px solid black;
+    margin: 50px auto;
+    width: 50px;
+    height: 50px;
+
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color:  red;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.nav-inner {
+    width: 150px;
+    height: 50px;
+    background-color: aqua;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
